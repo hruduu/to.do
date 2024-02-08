@@ -1,0 +1,151 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.todo-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.todo-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.todo-input-item {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.todo-input-item label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.todo-input-item input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.todo-input-item input:focus {
+  outline: none;
+  border-color: lightgreen;
+}
+
+.primary-btn {
+  background-color: #00cc66;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color:  #00cc66;
+}
+
+.btn-area {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.secondaryBtn {
+  background-color: #ccc;
+  color: #333;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondaryBtn:last-child {
+  margin-right: 0;
+}
+
+.secondaryBtn.active {
+  background-color:  #00cc66;
+  color: white;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-item {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list-item h3 {
+  font-size: 22px;
+  color: green;
+  font-weight: bold;
+  margin: 0;
+}
+
+.todo-list-item p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.check-icon {
+  color: #00e67a;
+}
+
+.check-icon:hover {
+  color: #04c068;
+}
+
+.delete-icon {
+  color: red;
+}
+
+.delete-icon:hover {
+  color: darkred;
+}
